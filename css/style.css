@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    border: 0;
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+
+    background-color: #f3f5fc;
+
+    display: flex;
+}
+
+/* global */
+.direita{
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.esquerda{
+    width: 30%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* :lado direito */
+.direita .logo{
+    width: 90%;
+}
+.direita .texto{
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.direita .texto textarea{
+    width: 90%;
+    height: 250px;
+
+    background-color: #ffffff;
+    color: black;
+    font-size: 20px;
+
+    resize: none;
+
+    margin-top: 50px;
+}
+.direita .botoes{
+    width: 90%;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    margin-top: 50px;
+}
+.direita .botoes button{
+    width: 40%;
+    height: 70px;
+
+    border-radius: 30px;
+}
+.direita .botoes #but1{
+    background-color: #072b61;
+    color: #ffffff;
+}
+.direita .botoes #but2{
+    border: 1px #072b61 solid;
+    color: #072b61;
+}
+
+/* Lado esquerdo - resultado */
+.resultado{
+    width: 70%;
+    height: 90%;
+
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 40px;
+
+    background-color: #ffffff;
+    box-shadow: 0 0 20px 0 rgba(22, 22, 22, 0.39);
+
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.resultado h3{
+    color: #343a40;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin-bottom: 15px;
+}
+.resultado p{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin-bottom: 15px;
+}
+.esquerda .resultado img{
+    width: 80%;
+}
+
+/* FOOTER */
+footer{
+    width: 100%;
+    height: auto;
+
+    color: #ffffff;
+    background-color: #0a3871;
+
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+footer h2{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1200px) and (min-width: 300px){
+    main{
+        height: auto;
+        flex-direction: column;
+    }
+    .esquerda, .direita{
+        width: 100%;
+    }
+    .esquerda {
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+}
