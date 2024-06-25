@@ -104,10 +104,20 @@ main{
     margin-bottom: 15px;
 }
 .resultado p{
-    font-size: 15px;
+    width: 90%;
+    height: 70%;
+
     font-family: Arial, Helvetica, sans-serif;
-    
-    margin-bottom: 15px;
+
+    overflow-wrap: break-word;
+}
+.resultado button{
+    width: 80%;
+    height: 50px;
+    border-radius: 30px;
+
+    border: 1px #072b61 solid;
+    color: #072b61;
 }
 .esquerda .resultado img{
     width: 80%;
@@ -130,7 +140,7 @@ footer h2{
 }
 
 
-@media screen and (max-width: 1200px) and (min-width: 300px){
+@media screen and (max-width: 1200px) and (min-width: 200px){
     main{
         height: auto;
         flex-direction: column;
